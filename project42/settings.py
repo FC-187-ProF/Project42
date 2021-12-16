@@ -25,7 +25,7 @@ SECRET_KEY = '&0agrboj#g*or(vh0p^0(!a+z0i*zg$@=9kstiz#a+b=0muk-u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 
 # Application definition
@@ -76,12 +76,12 @@ WSGI_APPLICATION = 'project42.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'django_db',
         'USER' : 'project42',
         'PASSWORD' : 'Password',
-        'HOST' : '127.0.0.1',
-        'PORT' : '5432',
+        'HOST' : 'localhost',
+        'PORT' : '3306',
     }
 }
 
